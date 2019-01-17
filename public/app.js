@@ -602,7 +602,7 @@ app.loadMenuListPage = function(){
       }
       if(loggedIn){
         app.bindAddToCartButtons();
-      }      
+      }
     } else {
       // If the request comes back as something other than 200, log the user out (on the assumption that the api is temporarily down or the users token is bad)
       app.logUserOut();
@@ -887,7 +887,7 @@ app.loadOrderDetailPage = function(){
       }
     });
   } else {
-    console.log("missing required date");
+    console.log("missing required data");
     // app.logUserOut();
   }
 };
