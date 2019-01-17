@@ -878,17 +878,14 @@ app.loadOrderDetailPage = function(){
           }
         } else {
           // If the request comes back as something other than 200, log the user out (on the assumption that the api is temporarily down or the users token is bad)
-          console.log("1 "+statusCode);
-          // app.logUserOut();
+          app.logUserOut();
         }
       } else {
-        console.log("2 "+statusCode);
-        // app.logUserOut();
+        app.logUserOut();
       }
     });
   } else {
-    console.log("missing required data");
-    // app.logUserOut();
+    app.logUserOut();
   }
 };
 
