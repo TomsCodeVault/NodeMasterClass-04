@@ -6,7 +6,7 @@ yarn-debug.log*
 yarn-error.log*
 
 # config.js may contain sensitive information
-lib/config.js
+# lib/config.js
 
 # Runtime data
 pids
